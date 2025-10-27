@@ -1,3 +1,13 @@
+h1, h2, h3, .logo {
+  font-family: "Cinzel", serif;
+  letter-spacing: 2px;
+}
+
+p, a, li, button, input {
+  font-family: "Cinzel", serif;
+}
+
+
 /* ---------- RESET ---------- */
 * {
   margin: 0;

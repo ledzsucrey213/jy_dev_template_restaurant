@@ -5,6 +5,10 @@
   padding-top: 120px; /* pour compenser la navbar fixe */
 }
 
+.restaurant-text {
+    padding: 0 100px; /* 🔹 espace à gauche et à droite du texte */
+  }
+
 /* ---------- INTRO ---------- */
 .restaurant-intro {
   width: 85%;
