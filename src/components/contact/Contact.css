@@ -131,4 +131,8 @@
   .contact-card {
     padding: 30px 20px;
   }
+
+  .contact-header {
+    margin-top: 60px; /* 🔹 ajoute de l’espace au-dessus du titre */
+  }
 }

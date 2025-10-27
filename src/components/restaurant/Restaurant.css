@@ -135,6 +135,14 @@
     gap: 15px;
   }
 
+  .restaurant-text {
+    padding: 0 25px; /* 🔹 espace à gauche et à droite du texte */
+  }
+
+  .restaurant-text p {
+    text-align: center; /* 🔹 reste bien centré sur mobile */
+  }
+
   .footer-content {
     flex-direction: column;
     gap: 30px;

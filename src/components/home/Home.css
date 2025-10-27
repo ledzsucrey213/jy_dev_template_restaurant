@@ -433,4 +433,16 @@
     flex-direction: column;
     gap: 30px;
   }
+
+  .footer-right ul {
+    text-align: center;       /* centre le texte */
+    width: 100%;              /* occupe toute la largeur */
+    padding: 0;               /* retire les marges internes */
+    margin: 0 auto;           /* centre le bloc */
+  }
+
+  .footer-right li {
+    text-align: center;       /* centre individuellement les items */
+  }
+
 }

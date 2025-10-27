@@ -358,26 +358,47 @@
   position: absolute;
   right: 25px;
   top: 25px;
-  z-index: 30;
+  z-index: 40;
+  transition: transform 0.3s ease;
 }
 
 .burger span {
-  height: 3px;
+  height: 2px;
   width: 100%;
   background: #b47b5d;
   border-radius: 5px;
   transition: all 0.3s ease;
 }
 
-/* Animation du burger -> croix */
+/* Animation burger -> croix */
 .burger.open span:nth-child(1) {
-  transform: rotate(45deg) translateY(8px);
+  transform: rotate(45deg) translate(5px, 5px);
 }
 .burger.open span:nth-child(2) {
   opacity: 0;
 }
 .burger.open span:nth-child(3) {
-  transform: rotate(-45deg) translateY(-8px);
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* ---------- BOUTON ✕ séparé du burger ---------- */
+.close-btn {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: #b47b5d;
+  font-weight: 200;
+  cursor: pointer;
+  z-index: 50;
+  line-height: 1;
+  transition: transform 0.2s ease;
+}
+
+.close-btn:hover {
+  transform: scale(1.1);
 }
 
 /* ---------- MENU MOBILE ---------- */
@@ -393,9 +414,11 @@
   align-items: center;
   justify-content: center;
   gap: 25px;
-  z-index: 25;
+  z-index: 45;
   animation: fadeIn 0.3s ease forwards;
+  overflow-y: hidden;
 }
+
 
 .mobile-menu a,
 .mobile-book {

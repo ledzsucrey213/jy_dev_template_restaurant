@@ -90,3 +90,12 @@
   color: #888;
   margin-top: 50px;
 }
+
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width: 768px) {
+
+  .menu-header {
+    margin-top: 60px; /* 🔹 ajoute de l’espace au-dessus du titre */
+  }
+}
