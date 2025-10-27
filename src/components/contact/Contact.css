@@ -1,0 +1,134 @@
+.contact-page {
+  background: #fbf3e3;;
+  color: #000;
+  min-height: 100vh;
+  padding-top: 120px; /* pour ne pas passer sous la navbar */
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* ---------- HEADER ---------- */
+.contact-header h1 {
+  font-size: 2rem;
+  letter-spacing: 3px;
+  margin-bottom: 8px;
+}
+
+.contact-header p {
+  color: #555;
+  font-size: 1rem;
+  margin-bottom: 40px;
+}
+
+/* ---------- INFO ADRESSE ---------- */
+.contact-info {
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  padding: 25px 30px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  margin-bottom: 60px;
+  text-align: center;
+  width: 80%;
+  max-width: 600px;
+}
+
+.contact-info h3 {
+  color: #b47b5d;
+  margin-bottom: 8px;
+  font-size: 1.2rem;
+  letter-spacing: 0.5px;
+}
+
+.contact-info p {
+  color: #555;
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+/* ---------- GRID ---------- */
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 40px;
+  width: 80%;
+  max-width: 1000px;
+  margin-bottom: 60px;
+}
+
+/* ---------- CARD ---------- */
+.contact-card {
+  background: #fafafa;
+  border: 1px solid #eee;
+  border-radius: 12px;
+  padding: 40px 25px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.05);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.contact-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+}
+
+.contact-icon {
+  font-size: 2.5rem;
+  color: #b47b5d;
+  margin-bottom: 15px;
+}
+
+.contact-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #000;
+}
+
+.contact-card p {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+.contact-highlight {
+  color: #b47b5d;
+  font-weight: 600;
+}
+
+.contact-highlight-black {
+  color: #000000;
+  font-weight: 600;
+}
+
+
+/* ---------- FOOTER ---------- */
+.contact-footer {
+  margin-top: auto;
+  padding: 30px 0;
+  font-size: 0.9rem;
+  color: #777;
+  border-top: 1px solid #eee;
+  width: 100%;
+  text-align: center;
+}
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width: 768px) {
+  .contact-header h1 {
+    font-size: 1.7rem;
+  }
+
+  .contact-info {
+    width: 90%;
+  }
+
+  .contact-grid {
+    width: 90%;
+    gap: 25px;
+  }
+
+  .contact-card {
+    padding: 30px 20px;
+  }
+}
