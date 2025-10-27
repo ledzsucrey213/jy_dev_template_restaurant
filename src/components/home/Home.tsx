@@ -156,7 +156,7 @@ function Home() {
         <div className="footer-bottom">
           <p>
             © 2025 Italy Restaurant Template — Réalisation{" "}
-            <span className="highlight">JY DEV</span>
+            <span className="highlight">JYF Solutions</span>
           </p>
         </div>
       </footer>

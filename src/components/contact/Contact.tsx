@@ -55,7 +55,7 @@ function Contact() {
 
       {/* ---------- FOOTER ---------- */}
       <footer className="contact-footer">
-        <p>© 2025 Italy Restaurant Template — Réalisation JY DEV — Tous droits réservés</p>
+        <p>© 2025 Italy Restaurant Template — Réalisation JYF Solutions — Tous droits réservés</p>
       </footer>
     </div>
   );

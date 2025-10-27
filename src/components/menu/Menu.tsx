@@ -75,7 +75,7 @@ const Menu = () => {
       </div>
 
       <footer className="menu-footer">
-        <p>Prix taxes et service inclus — © 2025 Restaurant Italy - JY DEV</p>
+        <p>Prix taxes et service inclus — © 2025 Restaurant Italy - JYF Solutions</p>
       </footer>
     </div>
   );
