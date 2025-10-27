@@ -1,5 +1,5 @@
 import { useState, type ChangeEvent, type FormEvent } from "react";
-import tableImage from "../../assets/images/table.jpg";
+import tableImage from "../../assets/images/table.webp";
 import logo from "../../assets/images/chef_icon.png";
 import { FaInstagram } from "react-icons/fa";
 import "../../App.css";
@@ -33,7 +33,7 @@ function Home() {
       {/* ---------- SECTION HERO ---------- */}
       <section className="hero">
         <div className="overlay"></div>
-        <img src={tableImage} alt="background" className="background" />
+        <img src={tableImage} alt="background" className="background" loading="eager" />
 
         <div className="hero-content">
           <div className="circle">
