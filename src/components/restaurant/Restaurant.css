@@ -148,7 +148,7 @@
 
   .restaurant-text {
     padding: 0 25px; /* 🔹 espace à gauche et à droite du texte */
-    margin-top: -20px; /* 🔹 ajuste l’espace au-dessus du texte */
+    margin-top: -30px; /* 🔹 ajuste l’espace au-dessus du texte */
   }
 
   .restaurant-text p {
@@ -161,6 +161,6 @@
   }
 
   .restaurant-header {
-    margin-top: 30px; /* 🔹 ajoute de l’espace au-dessus du titre */
+    margin-top: 20px; /* 🔹 ajoute de l’espace au-dessus du titre */
   }
 }
