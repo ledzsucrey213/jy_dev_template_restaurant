@@ -15,6 +15,9 @@ import { Link } from "react-router-dom";
 function Restaurant() {
   return (
     <div className="restaurant-page">
+      <header className="contact-header">
+        <h1>Une cuisine d'exception</h1>
+      </header>
       {/* ---------- PREMIÈRE GALERIE ---------- */}
       <section className="restaurant-gallery">
         <div className="image-box"><img src={plat1} alt="plat 1" /></div>
