@@ -161,6 +161,6 @@
   }
 
   .restaurant-header {
-    margin-top: 15px; /* 🔹 ajoute de l’espace au-dessus du titre */
+    margin-top: 0px; /* 🔹 ajoute de l’espace au-dessus du titre */
   }
 }
