@@ -133,6 +133,6 @@
   }
 
   .contact-header {
-    margin-top: 20px; /* 🔹 ajoute de l’espace au-dessus du titre */
+    margin-top: 0px; /* 🔹 ajoute de l’espace au-dessus du titre */
   }
 }
