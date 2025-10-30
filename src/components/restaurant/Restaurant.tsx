@@ -15,7 +15,7 @@ import { Link } from "react-router-dom";
 function Restaurant() {
   return (
     <div className="restaurant-page">
-      <header className="contact-header">
+      <header className="restaurant-header">
         <h1>Une cuisine d'exception</h1>
       </header>
       {/* ---------- PREMIÈRE GALERIE ---------- */}

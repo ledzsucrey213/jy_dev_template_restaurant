@@ -9,6 +9,13 @@
     padding: 0 100px; /* 🔹 espace à gauche et à droite du texte */
   }
 
+/* ---------- HEADER ---------- */
+.restaurant-header h1 {
+  font-size: 2rem;
+  letter-spacing: 3px;
+  margin-bottom: 8px;
+}
+
 /* ---------- INTRO ---------- */
 .restaurant-intro {
   width: 85%;
@@ -141,6 +148,7 @@
 
   .restaurant-text {
     padding: 0 25px; /* 🔹 espace à gauche et à droite du texte */
+    margin-top: -20px; /* 🔹 ajuste l’espace au-dessus du texte */
   }
 
   .restaurant-text p {
@@ -150,5 +158,9 @@
   .footer-content {
     flex-direction: column;
     gap: 30px;
+  }
+
+  .restaurant-header {
+    margin-top: 30px; /* 🔹 ajoute de l’espace au-dessus du titre */
   }
 }
