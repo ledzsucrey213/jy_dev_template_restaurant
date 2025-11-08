@@ -41,7 +41,7 @@ function Home() {
             <p className="circle-subtitle">Experience the taste of Italy</p>
             <h2 className="circle-title">Great Dining</h2>
             <h2 className="circle-title bold">Experience</h2>
-            <button className="circle-btn">Authentic Experience →</button>
+            <Link to="/restaurant" className="circle-btn">Authentic Experience →</Link>
           </div>
 
           <div className="buttons">
