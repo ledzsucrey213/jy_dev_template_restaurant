@@ -45,10 +45,10 @@ function Home() {
           </div>
 
           <div className="buttons">
-            <Link to="/menu" className="btn">
+            <Link to="/menu" className="btnMenu">
               CARTE
             </Link>
-            <button className="btn" onClick={() => setShowModal(true)}>
+            <button className="btnReservation" onClick={() => setShowModal(true)}>
               RÉSERVATION
             </button>
           </div>

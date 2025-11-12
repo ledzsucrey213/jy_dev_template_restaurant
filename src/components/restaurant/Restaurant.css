@@ -7,6 +7,8 @@
 
 .restaurant-text {
     padding: 0 100px; /* 🔹 espace à gauche et à droite du texte */
+    margin-top: -20px;
+    margin-bottom: 60px;
   }
 
 /* ---------- HEADER ---------- */
@@ -43,7 +45,7 @@
 
 .image-box {
   flex: 1 1 250px;
-  max-width: 300px;
+  max-width: 400px;
   overflow: hidden;
   border-radius: 8px;
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
