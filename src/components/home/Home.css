@@ -195,6 +195,7 @@
   text-transform: uppercase;
   cursor: pointer;
   transition: background 0.3s;
+  border-radius: 8px;
 }
 
 .circle-btn:hover {

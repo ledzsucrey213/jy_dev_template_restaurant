@@ -37,7 +37,7 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 25px;
+  gap: 40px;
   margin: 40px auto 80px;
   width: 90%;
   max-width: 1200px;
@@ -166,3 +166,8 @@
     margin-top: 0px; /* 🔹 ajoute de l’espace au-dessus du titre */
   }
 }
+
+
+
+
+
