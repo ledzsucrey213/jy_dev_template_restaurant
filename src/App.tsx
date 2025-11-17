@@ -57,12 +57,13 @@ function App() {
   const loading = usePreloadImages();
 
   if (loading) {
-    return (
-      <div className="loading-screen">
-        Chargement...
-      </div>
-    );
-  }
+  return (
+    <div className="loading-screen">
+      <div className="spinner"></div>
+    </div>
+  );
+}
+
 
   return (
     <Router>
