@@ -92,8 +92,8 @@ const isIOS = () => /iPad|iPhone|iPod/.test(navigator.userAgent);
                         title="Voir en AR"
                       >
                         <img
-                          src="/vr-icon.png"
-                          alt="VR"
+                          src="/ar-icon.png"
+                          alt="AR"
                           style={{ width: "24px", height: "24px" }}
                         />
                       </a>
