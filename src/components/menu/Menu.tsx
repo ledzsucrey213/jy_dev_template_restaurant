@@ -1,6 +1,15 @@
+import React, { useState, useEffect } from "react";
+import "@google/model-viewer"; // pour Android
 import "./Menu.css";
 
 const Menu = () => {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    // Détecte mobile par userAgent
+    const checkMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+    setIsMobile(checkMobile);
+  }, []);
   const menuData = [
     {
       title: "ANTIPASTI",
@@ -15,7 +24,7 @@ const Menu = () => {
       title: "PIATTI PRINCIPALI",
       items: [
         { it: "Tagliatelle al tartufo", fr: "Tagliatelles à la crème de truffe noire", price: "24,90 €" },
-        { it: "Risotto ai funghi porcini", fr: "Risotto aux cèpes et copeaux de parmesan", price: "22,90 €" },
+        { it: "Pizza Margherita", fr: "Sauce tomate, Mozzarella de Bufala, feuilles de basilic, huile d'olive", price: "22,90 €", vr: true },
         { it: "Filetto di manzo alla griglia", fr: "Filet de bœuf grillé, sauce chianti", price: "29,90 €" },
         { it: "Branzino al forno", fr: "Bar rôti au citron sicilien et légumes grillés", price: "26,50 €" },
       ],
@@ -49,34 +58,57 @@ const Menu = () => {
     },
   ];
 
-  return (
-    <div className="menu-container">
-      <header className="menu-header">
-        <h1>RESTAURANT ITALY</h1>
-        <p>Un voyage culinaire au cœur de l’Italie.</p>
-      </header>
+ const isIOS = () => /iPad|iPhone|iPod/.test(navigator.userAgent);
 
+  const openAR = () => {
+    const url = isIOS() ? "/models/pizza.usdz" : "/models/pizza.glb";
+    if (isIOS()) {
+      window.location.href = url;
+    } else {
+      alert("Sur Android, le modèle AR sera affiché ici (via model-viewer).");
+    }
+  };
+return (
+    <div className="menu-container">
       <div className="menu-content">
         {menuData.map((section, index) => (
           <div key={index} className="menu-section">
             <h2 className="menu-title">{section.title}</h2>
             <div className="menu-items">
               {section.items.map((item, idx) => (
-                <div key={idx} className="menu-item">
+                <div key={idx} className="menu-item" style={{ display: "flex", alignItems: "center", justifyContent: "space-between" }}>
                   <span className="item-name">
                     {item.it} <em>– {item.fr}</em>
                   </span>
-                  <span className="item-price">{item.price}</span>
+
+                  <div style={{ display: "flex", alignItems: "center" }}>
+                    <span className="item-price">{item.price}</span>
+
+                    {isMobile && item.vr && (
+                      <button
+                        onClick={openAR}
+                        style={{
+                          marginLeft: "10px",
+                          background: "transparent",
+                          border: "none",
+                          cursor: "pointer"
+                        }}
+                        title="Voir en AR"
+                      >
+                        <img
+                          src="/ar-icon.png"
+                          alt="AR"
+                          style={{ width: "24px", height: "24px" }}
+                        />
+                      </button>
+                    )}
+                  </div>
                 </div>
               ))}
             </div>
           </div>
         ))}
       </div>
-
-      <footer className="menu-footer">
-        <p>Prix taxes et service inclus — © 2025 Restaurant Italy - JYF Solutions</p>
-      </footer>
     </div>
   );
 };
