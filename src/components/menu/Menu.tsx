@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-import "@google/model-viewer"; // pour Android
 import "./Menu.css";
 
 const Menu = () => {
@@ -7,9 +6,10 @@ const Menu = () => {
 
   useEffect(() => {
     // Détecte mobile par userAgent
-    const checkMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+    const checkMobile = /iPhone|iPad|iPod/i.test(navigator.userAgent);
     setIsMobile(checkMobile);
   }, []);
+
   const menuData = [
     {
       title: "ANTIPASTI",
@@ -58,17 +58,9 @@ const Menu = () => {
     },
   ];
 
- const isIOS = () => /iPad|iPhone|iPod/.test(navigator.userAgent);
+const isIOS = () => /iPad|iPhone|iPod/.test(navigator.userAgent);
 
-  const openAR = () => {
-    const url = isIOS() ? "/models/pizza.usdz" : "/models/pizza.glb";
-    if (isIOS()) {
-      window.location.href = url;
-    } else {
-      alert("Sur Android, le modèle AR sera affiché ici (via model-viewer).");
-    }
-  };
-return (
+  return (
     <div className="menu-container">
       <div className="menu-content">
         {menuData.map((section, index) => (
@@ -76,32 +68,36 @@ return (
             <h2 className="menu-title">{section.title}</h2>
             <div className="menu-items">
               {section.items.map((item, idx) => (
-                <div key={idx} className="menu-item" style={{ display: "flex", alignItems: "center", justifyContent: "space-between" }}>
+                <div
+                  key={idx}
+                  className="menu-item"
+                  style={{ display: "flex", alignItems: "center", justifyContent: "space-between" }}
+                >
                   <span className="item-name">
                     {item.it} <em>– {item.fr}</em>
                   </span>
 
                   <div style={{ display: "flex", alignItems: "center" }}>
+                    <span className="item-price">{item.price}</span>
 
-                    {isMobile && item.vr && (
-                      <button
-                        onClick={openAR}
+                    {isMobile && item.vr && isIOS() && (
+                      <a
+                        rel="ar"
+                        href="/models/pizza.usdz"
                         style={{
                           marginLeft: "10px",
-                          background: "transparent",
-                          border: "none",
-                          cursor: "pointer"
+                          display: "inline-block",
+                          cursor: "pointer",
                         }}
                         title="Voir en AR"
                       >
                         <img
-                          src="/ar-icon.png"
-                          alt="AR"
+                          src="/vr-icon.png"
+                          alt="VR"
                           style={{ width: "24px", height: "24px" }}
                         />
-                      </button>
+                      </a>
                     )}
-                    <span className="item-price">{item.price}</span>
                   </div>
                 </div>
               ))}
