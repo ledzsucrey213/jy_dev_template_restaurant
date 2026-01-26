@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import "@google/model-viewer"; // pour Android
 import "./Menu.css";
 
@@ -82,7 +82,6 @@ return (
                   </span>
 
                   <div style={{ display: "flex", alignItems: "center" }}>
-                    <span className="item-price">{item.price}</span>
 
                     {isMobile && item.vr && (
                       <button
@@ -102,6 +101,7 @@ return (
                         />
                       </button>
                     )}
+                    <span className="item-price">{item.price}</span>
                   </div>
                 </div>
               ))}
