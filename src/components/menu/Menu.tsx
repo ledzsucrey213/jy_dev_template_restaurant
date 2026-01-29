@@ -83,7 +83,7 @@ const isIOS = () => /iPad|iPhone|iPod/.test(navigator.userAgent);
                     {isMobile && item.vr && isIOS() && (
                       <a
                         rel="ar"
-                        href="/models/pizza.usdz"
+                        href="/models/Pizza.usdz"
                         style={{
                           marginLeft: "10px",
                           display: "inline-block",
