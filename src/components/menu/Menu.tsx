@@ -58,11 +58,18 @@ const Menu = () => {
     },
   ];
 
-const isIOS = () => /iPad|iPhone|iPod/.test(navigator.userAgent);
+  const isIOS = () => /iPad|iPhone|iPod/.test(navigator.userAgent);
 
   return (
     <div className="menu-container">
       <div className="menu-content">
+        {isMobile && isIOS() && (
+          <div className="ar-page-label">
+            <span>Voir sur la table</span>
+            <img src="/ar-icon.png" alt="AR" />
+          </div>
+
+        )}
         {menuData.map((section, index) => (
           <div key={index} className="menu-section">
             <h2 className="menu-title">{section.title}</h2>

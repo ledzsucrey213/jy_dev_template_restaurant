@@ -36,6 +36,7 @@
 }
 
 .menu-title {
+  margin-top: 50px;
   font-size: 20px;
   letter-spacing: 1px;
   text-align: center;
@@ -91,11 +92,49 @@
   margin-top: 50px;
 }
 
+/* ---------- AR SECTION LABEL ---------- */
+
+.ar-page-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+
+  margin-top: 50px;
+  margin-left: 100px;
+
+  padding: 8px 20px;
+
+  border: 1.5px solid white;
+  border-radius: 22px;
+
+  background-color: rgba(255, 255, 255, 0.85);
+  color: black;
+
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.4px;
+
+  pointer-events: none;
+}
+
+
+.ar-page-label img {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
+
+
 
 /* ---------- RESPONSIVE ---------- */
 @media (max-width: 768px) {
 
   .menu-header {
     margin-top: 60px; /* 🔹 ajoute de l’espace au-dessus du titre */
+  }
+
+  .menu-title {
+    margin-top: 20px;
   }
 }
