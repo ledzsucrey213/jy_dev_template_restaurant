@@ -23,8 +23,8 @@ const Menu = () => {
     {
       title: "PIATTI PRINCIPALI",
       items: [
-        { it: "Tagliatelle al tartufo", fr: "Tagliatelles à la crème de truffe noire", price: "24,90 €" },
-        { it: "Pizza Margherita", fr: "Sauce tomate, Mozzarella de Bufala, feuilles de basilic, huile d'olive", price: "22,90 €", vr: true },
+        { it: "Spaghetti alla bolognese", fr: "Spaghetti à la bolognaise", price: "17,90 €", model: "spaghetti.usdz" },
+        { it: "Pizza Margherita", fr: "Sauce tomate, Mozzarella de Bufala, feuilles de basilic, huile d'olive", price: "22,90 €", model: "Pizza.usdz" },
         { it: "Filetto di manzo alla griglia", fr: "Filet de bœuf grillé, sauce chianti", price: "29,90 €" },
         { it: "Branzino al forno", fr: "Bar rôti au citron sicilien et légumes grillés", price: "26,50 €" },
       ],
@@ -35,7 +35,7 @@ const Menu = () => {
         { it: "Purè di patate all’olio d’oliva", fr: "Purée de pommes de terre à l’huile d’olive", price: "4,50 €" },
         { it: "Verdure grigliate", fr: "Légumes grillés à l’italienne", price: "6,00 €" },
         { it: "Polenta cremosa al parmigiano", fr: "Polenta crémeuse au parmesan", price: "6,50 €" },
-        { it: "Pasta al burro e salvia", fr: "Pâtes fraîches au beurre et à la sauge", price: "7,00 €" },
+        { it: "Pasta al burro e salvia", fr: "Pâtes fraîches au beurre et à la sauce", price: "7,00 €" },
       ],
     },
     {
@@ -87,10 +87,10 @@ const Menu = () => {
                   <div style={{ display: "flex", alignItems: "center" }}>
                     <span className="item-price">{item.price}</span>
 
-                    {isMobile && item.vr && isIOS() && (
+                    {isMobile && item.model && isIOS() && (
                       <a
                         rel="ar"
-                        href="/models/Pizza.usdz"
+                        href={`/models/${item.model}`}
                         style={{
                           marginLeft: "10px",
                           display: "inline-block",
