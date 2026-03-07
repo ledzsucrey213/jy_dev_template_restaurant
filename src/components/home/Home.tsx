@@ -54,7 +54,7 @@ function Home() {
           </div>
 
           <div className="social">
-            <a href="#" className="instagram">
+            <a href="https://www.instagram.com/jyf.solutions" className="instagram">
               <FaInstagram className="icon" />
             </a>
           </div>
@@ -130,8 +130,11 @@ function Home() {
       <footer className="restaurant-footer">
         <div className="footer-content">
           <div className="footer-left">
-            <FaInstagram className="footer-icon" />
+            <a href="https://www.instagram.com/jyf.solutions/" target="_blank" rel="noopener noreferrer">
+              <FaInstagram className="footer-icon" />
+            </a>
             <p>SUIVEZ-NOUS SUR INSTAGRAM</p>
+
           </div>
 
           <div className="footer-center">
