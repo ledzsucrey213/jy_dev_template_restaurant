@@ -24,7 +24,7 @@ const Menu = () => {
       title: "PIATTI PRINCIPALI",
       items: [
         { it: "Spaghetti alla bolognese", fr: "Spaghetti à la bolognaise", price: "17,90 €", model: "spaghetti.usdz" },
-        { it: "Pizza Margherita", fr: "Sauce tomate, Mozzarella de Bufala, feuilles de basilic, huile d'olive", price: "22,90 €", model: "Pizza.usdz" },
+        { it: "Pizza Margherita", fr: "Sauce tomate, Mozzarella de Bufala, feuilles de basilic, huile d'olive", price: "22,90 €", model: "pizza.usdz" },
         { it: "Filetto di manzo alla griglia", fr: "Filet de bœuf grillé, sauce chianti", price: "29,90 €" },
         { it: "Branzino al forno", fr: "Bar rôti au citron sicilien et légumes grillés", price: "26,50 €" },
       ],
