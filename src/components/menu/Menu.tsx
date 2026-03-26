@@ -26,7 +26,7 @@ const Menu = () => {
         { it: "Spaghetti alla bolognese", fr: "Spaghetti à la bolognaise", price: "17,90 €", model: "spaghetti.usdz" },
         { it: "Pizza Margherita", fr: "Sauce tomate, Mozzarella de Bufala, feuilles de basilic, huile d'olive", price: "22,90 €", model: "Pizza.usdz" },
         { it: "Filetto di manzo alla griglia", fr: "Filet de bœuf grillé, sauce chianti", price: "29,90 €" },
-        { it: "Pasta salmone", fr: "Pâtes au saumon, crème et aneth", price: "21,50 €", model: "PastaSalmone.usdz" },
+        { it: "Pasta salmone", fr: "Pâtes au saumon, crème et aneth", price: "21,50 €", model: "try.usdz" },
       ],
     },
     {
